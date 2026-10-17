@@ -11,7 +11,7 @@ export function Home() {
 			<p>very early alpha, improvements daily</p>
 			<p>join the <a
 				class="text-accent-text underline hover:no-underline"
-				href="https://hulme.rocks/"
+				href="https://discord.com/invite/9xKzzdabKC"
 				target="_blank">
 				discord</a> server to report bugs or suggest hosts/features</p>
 		</section>
