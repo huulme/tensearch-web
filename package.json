@@ -1,0 +1,21 @@
+{
+	"private": true,
+	"type": "module",
+	"scripts": {
+		"dev": "vite",
+		"dev:host": "vite --host",
+		"build": "vite build",
+		"preview": "vite preview"
+	},
+	"dependencies": {
+		"preact": "^10.26.9",
+		"preact-iso": "^2.12.2"
+	},
+	"devDependencies": {
+		"@preact/preset-vite": "^2.10.2",
+		"@tailwindcss/vite": "^4.3.3",
+		"tailwindcss": "^4.3.3",
+		"typescript": "^7.0.2",
+		"vite": "^7.0.4"
+	}
+}

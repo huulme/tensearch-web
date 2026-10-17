@@ -1,0 +1,76 @@
+@import "tailwindcss";
+
+/* 
+   if you're theming, show me!!
+  
+   key
+     canvas         page background
+     surface        cards, nav pills, inputs, modals
+     surface-hover  hovered surface (nav pills, buttons)
+     line           default borders
+     line-strong    hovered borders
+     ink            primary text
+     muted          secondary text
+     accent         solid accent (buttons, focus, selection)
+     accent-hover   hovered accent
+     accent-text    accent used for text and links
+     on-accent      text on top of an accent background
+     overlay        modal backdrop
+*/
+
+@theme static {
+	/* neutral */
+	--color-canvas: light-dark(#fdfafb, #180d13);
+	--color-surface: light-dark(#ffffff, #241420);
+	--color-surface-hover: light-dark(#f8ecf3, #3a1f2d);
+	--color-line: light-dark(#f0e0e9, #3a1f2d);
+	--color-line-strong: light-dark(#e4c8d8, #552b3f);
+	--color-ink: light-dark(#38192a, #fcedf5);
+	--color-muted: light-dark(#8a6274, #cba6bb);
+
+	/* accent */
+	--color-accent: light-dark(#eab9dd, #eab9dd);
+	--color-accent-hover: light-dark(#d8abcc, #f5c2e7);
+	--color-accent-text: light-dark(#a85184, #f5c2e7);
+	--color-on-accent: light-dark(#45203a, #45203a);
+	--color-overlay: light-dark(#00000066, #00000099);
+}
+
+@layer base {
+	html {
+		color-scheme: light dark;
+	}
+
+	:root[data-theme="light"] {
+		color-scheme: light;
+	}
+
+	:root[data-theme="dark"] {
+		color-scheme: dark;
+	}
+
+	body {
+		background-color: var(--color-canvas);
+		color: var(--color-ink);
+	}
+
+	::selection {
+		background-color: var(--color-accent);
+		color: var(--color-on-accent);
+	}
+
+	:focus-visible {
+		outline: 2px solid var(--color-accent-text);
+		outline-offset: 2px;
+	}
+
+	@media (prefers-reduced-motion: reduce) {
+		*,
+		*::before,
+		*::after {
+			transition-duration: 0s !important;
+			animation-duration: 0s !important;
+			scroll-behavior: auto !important;
+		}
+	}
+}
