@@ -24,8 +24,7 @@ export function Donate({ open, onClose }: DonateProps) {
 						target="_blank"
 					>
 						one 15-year-old developer
-					</a>
-					running at a loss. if you have found it helpful in any way, please
+					</a> running at a loss. if you have found it helpful in any way, please
 					consider donating to cover the (currently) small hosting cost and my
 					personal expenses.
 				</p>
