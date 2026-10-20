@@ -58,7 +58,7 @@ export function Search() {
 function Listing(props: { name: string; publisher: string; titleId: string; iconUrl: string | null }) {
 	return (
 		<a href={`/game/${props.titleId}`} class="flex flex-col w-50 rounded-xl bg-surface hover:-translate-y-0.5 transition-all hover:shadow-xl border-2 border-line hover:border-line-strong overflow-hidden">
-			<img src={`https://wsrv.nl?url=${props.iconUrl}&output=webp&w=512`} alt={props.name} class="border-b-2 border-inherit"/>
+			<img src={`https://wsrv.nl?url=${props.iconUrl}&output=webp&w=512`} alt={props.name} class="border-b-2 aspect-square border-inherit"/>
 			<div class="p-2 *:truncate">
 				<h2 class="font-bold">{props.name}</h2>
 				<p>{props.publisher}</p>
