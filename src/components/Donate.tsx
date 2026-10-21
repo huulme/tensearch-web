@@ -8,7 +8,7 @@ export function Donate({ open, onClose }: DonateProps) {
 
 	return (
 		<div
-			class="fixed inset-0 z-50 flex items-center justify-center bg-overlay p-4"
+			class="fixed inset-0 z-50 flex items-center justify-center bg-overlay backdrop-blur p-4"
 			onClick={onClose}
 		>
 			<div
